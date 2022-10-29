@@ -1,0 +1,120 @@
+<html>
+<head>
+<script>
+function validate()
+{
+var name=document.getElementById("stud_name").value;
+if( name=="")
+{
+document.getElementById("error_name").innerHTML= "Name should not be empty*" ;
+}
+var rollno=document.getElementById("stud_rollno").value;
+if( rollno=="")
+{
+document.getElementById("error_rollno").innerHTML= "Roll No missing*" ;
+}
+var dob=document.getElementById("stud_dob").value;
+if( dob=="")
+{
+document.getElementById("error_dob").innerHTML= "Date of Birth missing*" ;
+}
+var email=document.getElementById("stud_email").value;
+if( email=="")
+{
+document.getElementById("error_email").innerHTML= "E-mal ID missing*" ;
+}
+var fathername=document.getElementById("stud_fathername").value;
+if( fathername=="")
+{
+document.getElementById("error_fathername").innerHTML= "Please enter Father's Name*" ;
+}
+var occupation=document.getElementById("stud_occupation").value;
+if( occupation=="")
+{
+document.getElementById("error_occupation").innerHTML= "Father's Occupation can't be empty*" ;
+}
+var mothername=document.getElementById("stud_mothername").value;
+if( mothername=="")
+{
+document.getElementById("error_mothername").innerHTML= "Please enter Mother's Name*" ;
+}
+var motheroccupation=document.getElementById("stud_motheroccupation").value;
+if( motheroccupation=="")
+{
+document.getElementById("error_motheroccupation").innerHTML= "Mother's Occupation can't be empty*" ;
+}
+var address=document.getElementById("stud_address").value;
+if( address=="")
+{
+document.getElementById("error_address").innerHTML= "Address must to be entered*" ;
+}
+var phone=document.getElementById("stud_phone").value;
+if( phone=="")
+{
+document.getElementById("error_phone").innerHTML= "Phone Number compelsory*" ;
+}
+}
+</script>
+</head>
+<body>
+<form name="registration">
+<table border="1">
+<tr>
+<td colspan="2"><b>Student Registration</b></td>
+<tr>
+<td>Name </td>
+<td><input type="text" name="stud_name" id="stud_name"/></td>
+<div id= "error_name"></div>
+</tr>
+<tr>
+<td>Rollno </td>
+<td><input type="text" name="stud_rollno" id="stud_rollno"/></td>
+<div id= "error_rollno"></div>
+</tr>
+<tr>
+<td>Date of birth </td>
+<td><input type="int" name="stud_dob" id="stud_dob"/></td>
+<div id= "error_dob"></div>
+</tr>
+<tr>
+<td>E-mail </td>
+<td><input type="text" name="stud_email" id="stud_email"/></td>
+<div id= "error_email"></div>
+</tr>
+<tr>
+<td>Father's Name </td>
+<td><input type="text" name="stud_fathername" id="stud_fathername"/></td>
+<div id= "error_fathername"></div>
+</tr>
+<tr>
+<td>Father's occupation </td>
+<td><input type="text" name="stud_occupation" id="stud_occupation"/></td>
+<div id= "error_occupation"></div>
+</tr>
+<tr>
+<td>Mother's Name </td>
+<td><input type="text" name="stud_mothername" id="stud_mothername"/></td>
+<div id= "error_mothername"></div>
+</tr>
+<tr>
+<td>Mother's occupation </td>
+<td><input type="text" name="stud_motheroccupation" id="stud_motheroccupation"/></td>
+<div id= "error_motheroccupation"></div>
+</tr>
+<tr>
+<td>Address </td>
+<td><input type="textarea" name="stud_address" id="stud_address"/></td>
+<div id= "error_address"></div>
+</tr>
+<tr>
+<td>Phone Number </td>
+<td><input type="text" name="stud_phone" id="stud_phone"/></td>
+<div id= "error_phone"></div>
+</tr>
+<tr>
+<td colspan="2"><input type="button" value="Register" onclick="validate()"/></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
